@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>¡Oye, te llegó una carta!</title>
+</head>
+<body class="dark-mode">
+    <div class="overlay"></div>
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+
+    <div class="container">
+        <h1>¡Oye, te llegó una carta!</h1>
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDN2ang5NjN1bTkwMjA1d3pmaTF2czV6Z2E1MzdqdTN6YnluZWNmNSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/SGMlhCJnl5Ac0/giphy.gif" alt="Cute Letter" class="mascot-image">
+        
+        <div class="cards-container">
+            <div class="card" data-type="special">
+                <div class="card-content">
+                    <svg class="mail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <h2>Link Especial</h2>
+                    <p>Click para abrir</p>
+                </div>
+            </div>
+
+            <div class="card" data-type="apology">
+                <div class="card-content">
+                    <svg class="mail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <h2>Carta Especial</h2>
+                    <p>Click para leer la carta</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            © De parte de diaz.jsx - <span id="year"></span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
